@@ -17,8 +17,16 @@ Article.Title1 = "hi";
     document.getElementById("dyn_header").style.backgroungImage = json.bgImageUrl;
     document.getElementById("dyn_title").innerText=json.title;
     document.getElementById("dyn_desc").innerText=json.desc;
-    document.getElementById("dyn_author_website").innerText=json.author;
-    document.getElementById("dyn_author").innerHtml+=" on "+  monthName[new Date(json.date).getMonth()]+" "+new Date(json.date).getYear();
+    try {
+      document.getElementById("dyn_author").innerHtml='Posted by <a href="'+json.website+'">'+json.author+'</a> on '+monthName[new Date(json.date).getMonth()]+' '+new Date(json.date).getFullYear();
+
+    } catch (e) {
+
+    } finally {
+
+    }
+    // document.getElementById("dyn_author_website").href=json.website;
+    // document.getElementById("dyn_post_date").innerText=" on "+  monthName[new Date(json.date).getMonth()]+" "+new Date(json.date).getFullYear();
   //  document.getElementById("dyn_author_website").setAttribute("href", json.website);//.href=json.website;
 
     for (var prop in json.para) {
