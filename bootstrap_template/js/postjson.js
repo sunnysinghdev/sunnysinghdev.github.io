@@ -14,7 +14,7 @@ Article.Title1 = "hi";
     "date":Date.now
   };
   Article.load = function(json){
-    document.getElementById("dyn_header").style.backgroungImage = json.bgImageUrl;
+    document.getElementById("dyn_header").style.backgroundImage = "url('"+json.bgImageUrl+"')";
     document.getElementById("dyn_title").innerText=json.title;
     document.getElementById("dyn_desc").innerText=json.desc;
     try {
