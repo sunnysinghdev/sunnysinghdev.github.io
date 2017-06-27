@@ -19,12 +19,9 @@ Article.Title1 = "hi";
     document.getElementById("dyn_desc").innerText=json.desc;
     try {
       document.getElementById("dyn_author").innerHtml='Posted by <a href="'+json.website+'">'+json.author+'</a> on '+monthName[new Date(json.date).getMonth()]+' '+new Date(json.date).getFullYear();
-
     } catch (e) {
 
-    } finally {
-
-    }
+    } 
     // document.getElementById("dyn_author_website").href=json.website;
     // document.getElementById("dyn_post_date").innerText=" on "+  monthName[new Date(json.date).getMonth()]+" "+new Date(json.date).getFullYear();
   //  document.getElementById("dyn_author_website").setAttribute("href", json.website);//.href=json.website;
