@@ -2,7 +2,7 @@ var Article={};
 Article.Title1 = "hi";
 (function(){
   //paragraphs
-  Article.Title="hello";
+  Article.Title = "hello";
   var monthName =["January", "February","March","April","May","June","July","August","September","October","November","December"];
   var tempJson = {
     "title":"Day to day IT troubbleshoot",
@@ -13,15 +13,16 @@ Article.Title1 = "hi";
     "website":"http://sunnysinghdev.com/about_me.html",
     "date":Date.now
   };
-  Article.load = function(json){
-    document.getElementById("dyn_header").style.backgroundImage = "url('"+json.bgImageUrl+"')";
+  Article.load = function(name){
+    var json = Gladbeak.getPost(getParameterByName(name));
+    //document.getElementById("dyn_header").style.backgroundImage = "url('"+json.bgImageUrl+"')";
     document.getElementById("dyn_title").innerText=json.title;
     document.getElementById("dyn_desc").innerText=json.desc;
     try {
       document.getElementById("dyn_author").innerHtml='Posted by <a href="'+json.website+'">'+json.author+'</a> on '+monthName[new Date(json.date).getMonth()]+' '+new Date(json.date).getFullYear();
     } catch (e) {
-
-    } 
+console.log(e.message);
+    }
     // document.getElementById("dyn_author_website").href=json.website;
     // document.getElementById("dyn_post_date").innerText=" on "+  monthName[new Date(json.date).getMonth()]+" "+new Date(json.date).getFullYear();
   //  document.getElementById("dyn_author_website").setAttribute("href", json.website);//.href=json.website;
@@ -35,4 +36,13 @@ Article.Title1 = "hi";
         element.appendChild(para);
     }
   };
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+      var  results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+};
 })();
