@@ -4,15 +4,6 @@ Article.Title1 = "hi";
   //paragraphs
   Article.Title = "hello";
   var monthName =["January", "February","March","April","May","June","July","August","September","October","November","December"];
-  var tempJson = {
-    "title":"Day to day IT troubbleshoot",
-    "desc":"This article about how to counter our day to day it problems.",
-    "para":["Para 1 of dynamic blog"," Para 2 of dynamiv blog"],
-    "bgImageUrl":"",
-    "author":"Sunny Singh",
-    "website":"http://sunnysinghdev.com/about_me.html",
-    "date":Date.now
-  };
   Article.load = function(name){
     var json = Gladbeak.getPost(getParameterByName(name));
     //document.getElementById("dyn_header").style.backgroundImage = "url('"+json.bgImageUrl+"')";

@@ -9,12 +9,13 @@ Gladbeak.tim="";
      xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           var a = xhttp.responseText;
+          alert(a);
           var ar = JSON.parse(a);
           blogJson = ar;
       }
     };
-    //xhttp.open("GET", "http:www.sunnysinghdev.com", true);
-    xhttp.open("GET", file, false);
+    xhttp.open("GET", "http://www.sunnysinghdev.com", true);
+    //xhttp.open("GET", file, false);
     xhttp.send(null);
   };
   Gladbeak.getPost = function(id){
