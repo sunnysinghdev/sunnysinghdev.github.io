@@ -12,38 +12,102 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
+        body {
+            color: lightgray;
+        }
         .col-sm-4 {
             padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 800;
+        }
+
+        .intro-header {
+            text-align: center;
+            background-color: #777777;
+            background: no-repeat center center;
+            background-attachment: scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+            margin-bottom: 50px;
+        }
+
+        .site-heading {
+            margin-top: 25%;
+            margin-bottom: 25%;
+        }
+
+        .intro-header h1 {
+            color: gold;
+        }
+
+        .intro-header p {
+            color: lightgoldenrodyellow;
+        }
+
+        hr.small {
+            max-width: 100px;
+            margin: 15px auto;
+            border-width: 4px;
+            border-color: white;
         }
     </style>
 </head>
 
 <!-- <body style="background-color:#24292e"> -->
 
-<body style="background-color:lightgray;color:white">
+<body>
 
-    <div class="container text-center" style="color:gold;background:#24292e;">
-        <h1>Sunny Singh</h1>
-        <h3 style="color:white">Software Engineer</h3>
-        <p style="color:lightgrey">Having 10+ year experience in design and development of various type of software across different platfroms (mobile, desktop, web application).</p>
-    </div>
-    <hr>
-    <div class="container" style="color:white;background:#24292e;">
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('bootstrap_template/img/about-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Sunny Singh</h1>
+                        <hr class="small">
+                        <h3>Software engineer || Fullstack developer</h3>
+                        <h5>Skills (C# || .NET || ANGULAR || SQL Server || Python || PHP</h5>
+                        <p>Having 10+ year experience in design and development of various type of software
+                            across different platforms that include mobile, desktop and web application.</p>
+                            <a href="https://sunnysinghdev.github.io/">KNOW MORE...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="container" style="color:lightgray;background:#24292e;">
         <h2 style="text-transform: uppercase;">Client Projects</h2>
         <div class="" style="color:white;background:lightgray;padding: 10px;">
-            <ul  >
+            <ul>
                 <li>
-                    <a href="http://royalvds.com" target="_blank"><h4>Royal VDS</h4></a>
-    
+                    <a href="http://royalvds.com" target="_blank">
+                        <h4>Royal VDS</h4>
+                    </a>
+
                 </li>
                 <li>
-                    <a href="http://reliableinspection.in" target="_blank"><h4>Reliable home inspection</h4></a>
-    
+                    <a href="http://reliableinspection.in" target="_blank">
+                        <h4>Reliable home inspection</h4>
+                    </a>
+
                 </li>
-                
+
             </ul>
         </div>
-        
+
         <br>
     </div>
     <hr>
@@ -52,7 +116,8 @@
         <div class="row">
             <div class="col-sm-4 text-center">
                 <a href="bootstrap_template/index.html">
-                    <img src="https://www.w3schools.com/bootstrap/bird.jpg" class="img-responsive img-circle" style="display:inline" alt="Sunny Singh" width="150" height="150" />
+                    <img src="https://www.w3schools.com/bootstrap/bird.jpg" class="img-responsive img-circle"
+                        style="display:inline" alt="Sunny Singh" width="150" height="150" />
                 </a>
                 <h1 style="color:gold">GladbeaK</h1>
                 <p> Gladbeak is a dev tool that hepls newbee developers to progress and be productive at same time.</p>
@@ -61,49 +126,50 @@
             <div class="col-sm-4">
                 <h3>Projects</h3>
                 <div class="row">
-                    <a href="http://github.sunnysinghdev.com/MongoDb/" class="btn btn-primary form-control">
-                MongoDb
-                </a>
+                    <a href="https://sunnysinghdev.github.io/MongoDb/" class="btn btn-primary form-control">
+                        MongoDb
+                    </a>
                 </div>
                 <div class="row">
-                    <a href="http://github.sunnysinghdev.com/BhandaraScooters/" class="btn btn-primary form-control">
-                    Bhandara Scooters
-                </a>
-                </div>
-                <div class="row">
-
-                    <a href="http://github.sunnysinghdev.com/dotnetcore/" class="btn btn-primary form-control">
-                    Dot Net Core
-                </a>
+                    <a href="https://sunnysinghdev.github.io/BhandaraScooters/" class="btn btn-primary form-control">
+                        Bhandara Scooters
+                    </a>
                 </div>
                 <div class="row">
 
-                    <a href="http://github.sunnysinghdev.com/hello-world/" class="btn btn-primary form-control">
-                    Hello-World
-                </a>
+                    <a href="https://sunnysinghdev.github.io/dotnetcore/" class="btn btn-primary form-control">
+                        Dot Net Core
+                    </a>
                 </div>
                 <div class="row">
 
-                    <a href="http://github.sunnysinghdev.com/MultipleChoiceQA/" class="btn btn-primary form-control">
-                    Multiple Choice QA
-                </a>
+                    <a href="https://sunnysinghdev.github.io/hello-world/" class="btn btn-primary form-control">
+                        Hello-World
+                    </a>
                 </div>
                 <div class="row">
 
-                    <a href="http://github.sunnysinghdev.com/CreateAppX/" class="btn btn-primary form-control">
-                    Create Appx
-                </a> </div>
-                <div class="row">
-
-                    <a href="http://github.sunnysinghdev.com/CustomFeedReader/" class="btn btn-primary form-control">
-                    Custom Feed Reader
-                </a>
+                    <a href="https://sunnysinghdev.github.io/MultipleChoiceQA/" class="btn btn-primary form-control">
+                        Multiple Choice QA
+                    </a>
                 </div>
                 <div class="row">
 
-                    <a href="http://github.sunnysinghdev.com/FaceRecoginition/" class="btn btn-primary form-control">
-                    Face Recoginition
-                </a>
+                    <a href="https://sunnysinghdev.github.io/CreateAppX/" class="btn btn-primary form-control">
+                        Create Appx
+                    </a>
+                </div>
+                <div class="row">
+
+                    <a href="https://sunnysinghdev.github.io/CustomFeedReader/" class="btn btn-primary form-control">
+                        Custom Feed Reader
+                    </a>
+                </div>
+                <div class="row">
+
+                    <a href="https://sunnysinghdev.github.io/FaceRecoginition/" class="btn btn-primary form-control">
+                        Face Recoginition
+                    </a>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -112,13 +178,13 @@
                 </div>
                 <div class="row">
                     <a href="http://blog.sunnysinghdev.com/" class="btn btn-info form-control">
-                            Casual Blog
-                        </a>
+                        Casual Blog
+                    </a>
                 </div>
                 <div class="row">
                     <a href="http://tech.sunnysinghdev.com/" class="btn btn-info form-control">
-                                Technical Blog
-                            </a>
+                        Technical Blog
+                    </a>
                 </div>
 
             </div>
@@ -128,7 +194,7 @@
 
         <div class="row">
             <div class="col-sm-4">
-                
+
             </div>
         </div>
         <div class="row">
